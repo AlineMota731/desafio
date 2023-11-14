@@ -1,0 +1,116 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(90deg, rgba(209,161,242,1) 0%, rgba(187,235,236,1) 50%, rgba(244,211,165,1) 100%);
+}
+header {
+    font-size: 40px;
+    border-bottom: 1px solid grey;
+    font-weight: 700;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.containerPais {      
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+}   
+.pais {
+    width: 570px;
+    height: 570px;
+    margin: 5px;
+    border-radius: 5px;
+}
+.foto { 
+   margin: 5px;
+   }
+.nome {
+    background-color: rgb(169, 0, 199) ;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+ }
+img:hover {
+    opacity: 0.5; 
+}
+footer {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid grey;
+    height: 80px;
+    text-align: center;
+    align-items: center;
+    font-size: 20px;
+}
+@media screen and (max-width: 768px) {
+    
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+
+    .menu {
+        margin-top: 10px;
+    }
+
+    .search-bar {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .foto-secao {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .foto-secao2 {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+
+    .foto {
+        width: 100%;
+        height: auto;
+    }
+
+    footer {
+        font-size: 16px; 
+    }
+}
+
+@media screen and (max-width: 480px) {
+
+    .header {
+        padding: 5px; 
+    }
+
+    .menu ul {
+        gap: 15px; 
+    }
+
+    .search-bar input {
+        padding: 10px;
+    }
+
+    .foto-secao, .foto-secao2 {
+        margin-top: 15px; 
+        gap: 15px; 
+    }
+
+    footer {
+        font-size: 14px; 
+    }
+}
